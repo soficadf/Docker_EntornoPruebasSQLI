@@ -1,0 +1,191 @@
+body{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #6eadd6;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    height: 100vh;
+
+}
+
+.titulo {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Consolas';
+}
+
+.izquierda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    float:left;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-right: -5%;
+    padding-left: 4%;
+   
+}
+.derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    float: right;
+    
+    flex-direction: column;
+}
+
+.titulo img {
+    width: 72%;
+animation: escalar 10s infinite alternate;
+  }
+
+
+  @keyframes escalar {
+    0% {transform: scale(1);}
+    30% {transform: scale(1.15);}
+    60% {transform: rotate(4deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 2%;
+    
+}
+
+h3 {
+    font-size: 24pt; 
+    text-align: center;
+    font-family: 'consolas';
+    color: #555c62;
+}
+
+.text{
+    text-align: center;
+     text-align: center;
+     color: #5b6574;
+     font-size: 15pt;
+     margin-bottom: 7%;
+ }
+ 
+
+.opciones{
+    background-color: #feffffe7;
+    box-shadow: 0 0 4px 0 rgba(82, 80, 80, 0.3);
+    padding: 5%;
+    padding-top: 2%;
+    margin-right: 13%;
+    margin-left: 10%;
+    margin-top: 0%;
+
+    justify-self: center;
+}
+
+.opizq{
+float: right;
+width: 50%;
+}
+
+.opder{
+float: left;
+width: 46%;
+margin-top: 2%;
+
+}
+
+.opder h3{
+    font-size: 16pt;
+    color: #5b6574;
+ 
+ 
+}
+.derecha form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+  
+}
+
+
+
+.derecha form input[type="submit"] {
+    width: 210px;
+    padding: 8%;
+    background-color: rgba(31,130,192,255);
+    border: 0;
+    box-shadow: 0 0 6px 0 rgba(74, 73, 73, 0.3);
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    cursor: pointer;
+    font-family: 'consolas';
+    transition: background-color 0.2s;
+    transition: transform 0.7s ease;
+}
+
+.lineaicono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20%;
+    padding-left: 20%;
+   
+    
+}
+
+.icono {
+    width: 30px;
+    height: 30px ;
+    margin-right: 16px;
+    justify-self: center;
+    transition: transform 0.3s ease;
+}
+
+.icono:hover{
+    transform: scale(1.5);
+}
+
+.derecha form input[type="submit"]:hover {
+    background-color: #8eccf1;
+    transition: background-color 0.2s;
+    color: #555c62;
+    transform: scale(1.07);
+}
+
+
+.cuadro {
+    position: relative;
+}
+
+.cuadro:hover .textocuadro ,.cuadro:hover .textocuadro2 {
+    display: block; /* Mostrar el texto cuando se hace hover en el cuadro */
+}
+
+.textocuadro {
+    display: none; /* Ocultar el texto por defecto */
+    position: absolute;
+    top: 0%;
+    left: -200%;
+    min-height: 65px;
+    min-width: 180px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(97, 105, 110, 0.8); /* Color de fondo del texto */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 11pt;
+    z-index: 1; /* Asegurar que el texto esté encima de la carta */
+}
+

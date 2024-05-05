@@ -1,0 +1,27 @@
+
+services:
+    db:
+        image: mysql:latest
+        
+        environment:
+           MYSQL_ROOT_PASSWORD: secret
+           MYSQL_DATABASE: tfg
+           
+        volumes:
+            - ./dump:/docker-entrypoint-initdb.d
+            
+        networks:
+            - default
+    www:
+        build: .
+        ports: 
+            - "80:80"
+        volumes:
+            - ./www:/var/www/html
+        links:
+            - db
+        networks:
+            - default
+    
+volumes:
+    persistent:

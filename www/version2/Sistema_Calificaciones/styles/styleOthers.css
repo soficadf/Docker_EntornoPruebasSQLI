@@ -1,0 +1,186 @@
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.loggedin{
+margin: 0;
+background-color: #ffffff; 
+display: flex;
+height: 100vh;
+justify-content: center;
+align-content: center;
+}
+
+.loggedin .foto
+{
+    width: 45%;
+    background-image: url('http://127.0.0.1/version2/Sistema_Calificaciones/images/3.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.foto img{
+    float: left;
+    margin-left:5% ;
+    width: 200px;
+    display: block; 
+    margin-top: 2%;
+}
+
+
+.navtop .logout {
+    text-decoration: none; 
+    color: black; 
+    margin: 3%;
+}
+
+.navtop{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.navtop a:hover {
+    text-decoration: underline;
+}
+
+.info {
+    text-align: center;
+    margin:5% 15%;
+}
+
+.info h1 {
+    font-size: 40px;
+}
+
+.info h2 {
+    font-size: 24px;
+    color: #666;
+}
+
+
+.content {
+    width: 55%;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+}
+
+.formulario{
+    background-color: #e3eef7;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 12%;
+    margin-top: 6%;
+}
+.formulario form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+}
+.formulario form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50px;
+    background-color: rgba(31,130,192,255);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.formulario form input[type="submit"] {
+    width: 20%;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+    padding: 15px;
+   margin-top: 20px;
+    background-color: rgba(31,130,192,255);
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+.formulario form input[type="submit"]:hover {
+  background-color: rgba(31,130,192,255);
+    transition: background-color 0.2s;
+}
+
+.formulario p{
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.formulario form select, form input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.loggedin .foto2
+{
+    float:right;
+    width: 45%;
+    height: 100vh;
+    background-image: url('http://127.0.0.1/version2/Sistema_Calificaciones/images/3.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.content2 {
+    width: 55%;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+}
+
+.foto2 img{
+    float: right;
+    margin-right:5% ;
+    width: 200px;
+    display: block; 
+    margin-top: 2%;
+}
+
+.result{
+    background-color: #e3eef7;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 12%;
+    margin-top: 6%;
+  
+}
+
+.result h2{
+    text-align:center;
+    padding: 15%;
+    font-size: 150%;
+    color: #666;
+}
+
+
+
+.boton-volver {
+    background-color: rgba(31,130,192,255);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    float:right;
+    margin:5%;
+
+}
