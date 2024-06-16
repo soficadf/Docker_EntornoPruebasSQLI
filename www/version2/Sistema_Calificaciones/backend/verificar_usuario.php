@@ -16,7 +16,10 @@ $sql = "SELECT contraseña, rol FROM usuario WHERE usuario = '$user'";
 
 $result = mysqli_query($conexion, $sql);
 // Verificar si la consulta devuelve resultados
-if (mysqli_num_rows($result) > 0) {
+if ($result === false) {
+    die("Error en la consulta: (" . mysqli_errno($conexion) . ") " . mysqli_error($conexion));
+}
+if ( mysqli_num_rows($result) > 0) {
 
     $row = mysqli_fetch_assoc($result);
     $password = $row["contraseña"];
